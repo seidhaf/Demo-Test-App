@@ -1,5 +1,7 @@
 # Demo-Test-App
 
-Using: create-react-app, react-dom, react-bootstrap
+Dependencies used: - check package.json file
 
-For start run command ---> yarn start
+To run the web app run next commands:
+-> yarn install
+-> yarn start
