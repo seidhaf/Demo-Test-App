@@ -1,2 +1,5 @@
 # Demo-Test-App
-Just run command --> yarn start
+
+Using: create-react-app, react-dom, react-bootstrap
+
+For start run command ---> yarn start
