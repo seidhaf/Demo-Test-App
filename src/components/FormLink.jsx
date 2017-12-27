@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from 'react-router-dom';
 import {Form, FormGroup, formTitle, Col, FormControl, ControlLabel, Label, Button, Glyphicon} from 'react-bootstrap';
-import './FormLink.css';
+
 
 class FormLink extends React.Component{
   render() {
