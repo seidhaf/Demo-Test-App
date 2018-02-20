@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar.jsx';
-import FormContent from '../components/FormContent.jsx';
+import ContentForm from '../components/ContentForm.jsx';
 import {PageHeader} from "react-bootstrap";
 
 
