@@ -9,3 +9,4 @@ import registerServiceWorker from './registerServiceWorker';
 import store, { history } from './store';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
