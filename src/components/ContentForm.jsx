@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Field, reduxForm, FieldArray} from 'redux-form';
-
+import {Form, FormGroup, formTitle, Col, FormControl, ControlLabel, Label, Button, Glyphicon} from 'react-bootstrap';
 const renderTags =({ fields}) =>
 <ul>
  <button type="button" onClick={() => fields.push()}> Add new Tag </button>
