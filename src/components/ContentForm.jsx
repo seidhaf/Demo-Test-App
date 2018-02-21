@@ -1,34 +1,52 @@
 import React, { Component } from 'react';
-import {Field, reduxForm} from 'redux-form';
+import {Field, reduxForm, FieldArray} from 'redux-form';
 
-
+const renderTags =({ fields}) =>
+<ul>
+ <button type="button" onClick={() => fields.push()}> Add new Tag </button>
+  {
+    fields.map ((field, index) =>
+      <li key = {index}>
+      <Field name = {field} component ="input" placeholder="Tag"/>
+      <button type="button" onClick ={() => fields.remove (index)} > Remove </button>
+      </li>
+  )}
+</ul>
 class ContentForm extends Component{
  render (){
   return(
+    <div class= "container">
     <form onSubmit={this.props.handleSubmit}>
       <div>
-        <label> Title </label>
+      <Col componentClass={ControlLabel} sm={1}> Title </Col>
+      <Col sm={11}>
           <div>
             <Field name="Title"
             component="input"
             type="text"
             placeholder="Enter Title"/>
           </div>
+          </Col>
       </div>
-
       <div>
-          <label> Content </label>
+      <Col componentClass={ControlLabel} sm={1}> Content </Col>
+      <Col sm={11}>
           <div>
             <Field name="Content"
             component="textarea"
             type="text"
             placeholder="Add Content" />
           </div>
+          </Col>
       </div>
+      <div>
+        <FieldArray name="tags" component={renderTags}/>
+        </div>
       <div>
         <button type="submit">Find</button>
       </div>
     </form>
+    </div>
     );
   }
 }
