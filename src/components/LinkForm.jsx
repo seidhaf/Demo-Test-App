@@ -39,7 +39,7 @@ class LinkForm extends Component{
 
       </div>
       <div>
-          <label> Content </label>
+          <label> Preview </label>
           <div>
             <Field name="Preview"
             component="textarea"
