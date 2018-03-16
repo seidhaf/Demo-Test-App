@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar.jsx';
-import FormUpload from '../components/FormUpload.jsx';
+import UploadForm from '../components/UploadForm.jsx';
 
 
 class Upload extends Component {
@@ -9,10 +9,10 @@ class Upload extends Component {
 
       <div>
         <Navbar/>
-        <FormUpload />
+        <UploadForm />
 
       </div>
-    
+
     );
   }
 }
