@@ -9,7 +9,7 @@ class Content extends Component {
     return (
       <div>
         <Navbar />
-        <FormContent />    
+        <ContentForm />    
       </div>
     );
   }
